@@ -1,0 +1,5 @@
+C:\Users\ea33010\documents\visual studio 2013\Projects\CursoBizTalk\CursoBizTalk.Mapas\bin\Debug\CursoBizTalk.Mapas.dll
+C:\Users\ea33010\documents\visual studio 2013\Projects\CursoBizTalk\CursoBizTalk.Mapas\bin\Debug\CursoBizTalk.Mapas.pdb
+C:\Users\ea33010\documents\visual studio 2013\Projects\CursoBizTalk\CursoBizTalk.Mapas\bin\Debug\CursoBizTalk.Esquemas.dll
+C:\Users\ea33010\documents\visual studio 2013\Projects\CursoBizTalk\CursoBizTalk.Mapas\obj\Debug\CursoBizTalk.Mapas.dll
+C:\Users\ea33010\documents\visual studio 2013\Projects\CursoBizTalk\CursoBizTalk.Mapas\obj\Debug\CursoBizTalk.Mapas.pdb

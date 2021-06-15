@@ -1,0 +1,4 @@
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBiztalk.Orquestaciones\bin\Debug\CursoBiztalk.Orquestaciones.dll
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBiztalk.Orquestaciones\bin\Debug\CursoBiztalk.Orquestaciones.pdb
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBiztalk.Orquestaciones\obj\Debug\CursoBiztalk.Orquestaciones.dll
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBiztalk.Orquestaciones\obj\Debug\CursoBiztalk.Orquestaciones.pdb

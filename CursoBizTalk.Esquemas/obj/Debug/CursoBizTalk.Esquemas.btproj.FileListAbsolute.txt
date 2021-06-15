@@ -1,0 +1,4 @@
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBizTalk.Esquemas\bin\Debug\CursoBizTalk.Esquemas.dll
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBizTalk.Esquemas\bin\Debug\CursoBizTalk.Esquemas.pdb
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBizTalk.Esquemas\obj\Debug\CursoBizTalk.Esquemas.dll
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBizTalk.Esquemas\obj\Debug\CursoBizTalk.Esquemas.pdb

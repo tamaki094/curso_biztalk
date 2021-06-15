@@ -1,0 +1,4 @@
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\LibreriaUtilidades\bin\Debug\LibreriaUtilidades.dll
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\LibreriaUtilidades\bin\Debug\LibreriaUtilidades.pdb
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\LibreriaUtilidades\obj\Debug\LibreriaUtilidades.dll
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\LibreriaUtilidades\obj\Debug\LibreriaUtilidades.pdb

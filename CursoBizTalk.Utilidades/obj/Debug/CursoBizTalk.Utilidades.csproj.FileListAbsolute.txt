@@ -1,0 +1,4 @@
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBizTalk.Utilidades\bin\Debug\CursoBizTalk.Utilidades.dll
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBizTalk.Utilidades\bin\Debug\CursoBizTalk.Utilidades.pdb
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBizTalk.Utilidades\obj\Debug\CursoBizTalk.Utilidades.dll
+C:\Users\ea33010\Documents\Visual Studio 2013\Projects\CursoBizTalk\CursoBizTalk.Utilidades\obj\Debug\CursoBizTalk.Utilidades.pdb
