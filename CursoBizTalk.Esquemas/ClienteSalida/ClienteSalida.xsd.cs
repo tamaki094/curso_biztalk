@@ -42,6 +42,7 @@ namespace CursoBizTalk.Esquemas.ClienteSalida {
           <xs:complexType>
             <xs:sequence>
               <xs:element name=""FechaTransaccion"" type=""xs:dateTime"" />
+              <xs:element minOccurs=""0"" maxOccurs=""1"" name=""Proceso"" type=""xs:string"" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
