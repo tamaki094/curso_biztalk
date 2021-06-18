@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CursoBiztalk.Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
       <Name>System</Name>
@@ -60,6 +66,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="ProcesarCliente.odx">
+      <TypeName>ProcesarCliente</TypeName>
+      <Namespace>CursoBiztalk.Orquestaciones</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CursoBizTalk.Esquemas\CursoBizTalk.Esquemas.btproj">
+      <Project>{95d6f321-8d89-4db6-9c0e-91af4cd79f1b}</Project>
+      <Name>CursoBizTalk.Esquemas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CursoBizTalk.Mapas\CursoBizTalk.Mapas.btproj">
+      <Project>{1062f49b-4cb3-4d21-b9a9-45ded3fcf6e3}</Project>
+      <Name>CursoBizTalk.Mapas</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CursoBiztalk.Key.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

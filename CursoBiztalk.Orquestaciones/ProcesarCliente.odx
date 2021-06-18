@@ -2,34 +2,110 @@
 #error Do not define __DESIGNER_DATA.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
-    <om:Element Type="Module" OID="514d3f0b-9378-4f8a-b8d4-74137cda393f" LowerBound="1.1" HigherBound="17.1">
+    <om:Element Type="Module" OID="514d3f0b-9378-4f8a-b8d4-74137cda393f" LowerBound="1.1" HigherBound="35.1">
         <om:Property Name="ReportToAnalyst" Value="True" />
         <om:Property Name="Name" Value="CursoBiztalk.Orquestaciones" />
         <om:Property Name="Signal" Value="False" />
-        <om:Element Type="ServiceDeclaration" OID="b7a337a0-126c-49fe-822a-c0165329e41f" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="16.1">
+        <om:Element Type="PortType" OID="e1b71a36-adc0-4233-9d4d-0faca4383e58" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Cliente" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="0d3eed83-8ce7-4e0c-942c-b7a116d89180" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="9d85143f-462a-4e54-9445-e75fbd023d6d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.42">
+                    <om:Property Name="Ref" Value="CursoBizTalk.Esquemas.Cliente" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="97593424-e7be-4a2e-b168-8d21beb67d1a" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_Salida" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b25b42c9-2b54-45e0-b776-15ecc36a0bdf" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="eb9364df-454e-49ae-9db6-082d407b9bee" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.42">
+                    <om:Property Name="Ref" Value="CursoBizTalk.Esquemas.Cliente" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="b7a337a0-126c-49fe-822a-c0165329e41f" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="34.1">
             <om:Property Name="InitializedTransactionType" Value="False" />
-            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
             <om:Property Name="TypeModifier" Value="Internal" />
             <om:Property Name="ReportToAnalyst" Value="True" />
             <om:Property Name="Name" Value="ProcesarCliente" />
             <om:Property Name="Signal" Value="False" />
             <om:Element Type="ServiceBody" OID="d5aab3da-5e21-41da-ab62-a9bee406302b" ParentLink="ServiceDeclaration_ServiceBody">
                 <om:Property Name="Signal" Value="False" />
-                <om:Element Type="Receive" OID="c4f8bfd2-2b7e-4823-9c0c-4b7d28fbc5c2" ParentLink="ServiceBody_Statement" LowerBound="10.1" HigherBound="12.1">
-                    <om:Property Name="Activate" Value="False" />
+                <om:Element Type="Receive" OID="c4f8bfd2-2b7e-4823-9c0c-4b7d28fbc5c2" ParentLink="ServiceBody_Statement" LowerBound="28.1" HigherBound="30.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_Cliente" />
                     <om:Property Name="MessageName" Value="Cliente" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Rcv_Entrada" />
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
-                <om:Element Type="Send" OID="6a8661bd-8838-4dd0-9018-181c74eab900" ParentLink="ServiceBody_Statement" LowerBound="12.1" HigherBound="14.1">
+                <om:Element Type="Send" OID="6a8661bd-8838-4dd0-9018-181c74eab900" ParentLink="ServiceBody_Statement" LowerBound="30.1" HigherBound="32.1">
+                    <om:Property Name="PortName" Value="Port_Salida" />
                     <om:Property Name="MessageName" Value="Cliente" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
                     <om:Property Name="ReportToAnalyst" Value="True" />
                     <om:Property Name="Name" Value="Rcv_Salida" />
                     <om:Property Name="Signal" Value="True" />
                 </om:Element>
             </om:Element>
-            <om:Element Type="MessageDeclaration" OID="d5005bb9-09bd-4692-8d28-13c0a91d195e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="7.1" HigherBound="8.1">
+            <om:Element Type="PortDeclaration" OID="921deea2-f956-457a-834e-a6ad35e08aef" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CursoBiztalk.Orquestaciones.PortType_Cliente" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Cliente" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2cb24f55-4d7b-4e0c-88db-be61e6874a7d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c553384e-f915-4e61-ad8d-5310112d88fb" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CursoBiztalk.Orquestaciones.PortType_Salida" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_Salida" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="68d9ae8b-6b49-4d69-93c9-4049086d8870" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d5005bb9-09bd-4692-8d28-13c0a91d195e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
                 <om:Property Name="Type" Value="CursoBizTalk.Esquemas.Cliente" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
@@ -43,16 +119,34 @@
 [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
 module CursoBiztalk.Orquestaciones
 {
+    internal porttype PortType_Cliente
+    {
+        oneway Operation_1
+        {
+            CursoBizTalk.Esquemas.Cliente
+        };
+    };
+    internal porttype PortType_Salida
+    {
+        oneway Operation_1
+        {
+            CursoBizTalk.Esquemas.Cliente
+        };
+    };
     [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
     internal service ProcesarCliente
     {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_Cliente Port_Cliente;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_Salida Port_Salida;
         message CursoBizTalk.Esquemas.Cliente Cliente;
         body ()
         {
-
-#error "No Operation."
-
-#error "No Operation."
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c4f8bfd2-2b7e-4823-9c0c-4b7d28fbc5c2")]
+            activate receive (Port_Cliente.Operation_1, Cliente);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6a8661bd-8838-4dd0-9018-181c74eab900")]
+            send (Port_Salida.Operation_1, Cliente);
         }
     }
 }
